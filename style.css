@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Sono', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(219 234 254);
+}
+
+.song-generator{
+    background-color: rgb(59 130 246);
+    width: 1000px;
+    border-radius: 10px;
+    padding: 6px;
+    display: flex;
+    box-shadow: 8px 8px 5px rgb(255, 255, 255);
+}
+
+.user-input {
+    width:50%;
+    background-color: white;
+    border-radius:  5px 0px 0px 5px;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.submit-button {
+    padding: 2px;
+}
+
+#jumlah-genre {
+    padding: 2px;
+}
+
+.user-input button {
+    display: block;
+    padding: 10px 10px;
+    width: 50%;
+    margin-bottom: 10px;
+    background-color: rgb(59 130 246);
+    text-align: left;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.user-input button:hover {
+    background-color: rgb(37 99 235);
+    transition-duration: 300ms;
+    transition-delay: 75ms;
+}
+
+.display-song {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.lagu {
+    width: 90%;
+    height: 60px;
+    margin-top: 25px;
+    display: flex;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 5px 5px 1px rgb(170, 224, 255);
+    transition-duration: 0.3s;
+}
+
+.image img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.info-lagu {
+   margin: auto 0;
+   line-height: 140%;
+}
+
+.user-input button:disabled {
+    background-color: rgb(191 219 254);
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.display-song h1 {
+    color: white;
+    font-weight: 600;
+}
+
+.lagu:hover {
+    width: 92%;
+    height: 65px;
+    transition-duration: 0.3s;
+}
+
+@keyframes geserDiv {
+    from {
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes geserDiv2 {
+    from {
+        transform: translateX(500px);
+    }
+}
